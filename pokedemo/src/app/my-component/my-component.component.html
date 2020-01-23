@@ -1,0 +1,8 @@
+<h2>My Pockemeon</h2>
+<input [(ngModel)]="test">
+<!-- like -->
+<select [(ngModel)]="selectedValue" >
+    <option *ngFor="let item of pockemons|filterPokemonPipe:'name':test" [ngValue]="c" >{{item.name}}</option>
+</select>
+
+<h3>Pokemons list</h3>
